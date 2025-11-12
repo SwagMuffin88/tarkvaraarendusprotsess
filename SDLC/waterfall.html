@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosemudel</title>
+</head>
+<body>
+    <a href="../index.html">Algusesse</a>
+
+    <h1>
+        Kosemudel
+    </h1>
+    <hr/>
+
+    <p>
+        Kosemudel (ingl. k. <i>waterfall model</i>) on lineaarne jadapõhine tarkvaraarendusprotsessi elutsükli lähenemismeetod. See on üks esimesi elutsükli mudeleid ning kasutab projektisiseselt loogilist 
+        arenduse elutsükli sammude järjestust. Seda saab võrrelda sellega, kuidas vesi voolab kosest alla.
+        Meetodi käigus püstitatakse konkreetsed lõpp-eesmärgid ning peale nende saavutamist pole neid enam võimalik täiendada.
+        Tänapäeval on  kosemudeli asemel pigem enamlevinud dünaamilisemad agiilsed mudelid.
+    </p>
+    <p>
+        Tagasipäärdumine eelmisesse etappi on ekeruline ning kui eelneas etapis tuvastatakse viga, 
+        saab selle juurde tagasi tulla alles siis, kui tarkvara on juba kasutusse läinud.
+    </p>
+
+    <h2>
+        Etapid:
+    </h2>
+    <ol>
+        <li>
+            <h3>
+                Projekti nõuete defineerimine
+            </h3>
+            <p>
+                Dokumenteeritakse arendatava toote/süsteemi nõuded, käitumine, sihtriistvara jne.
+                Etapp võib jaguneda kaheks - eraldi süsteemi ja nõuete analüüs.
+            </p>
+        </li>
+        <li>
+            <h3>
+                Süsteemi ja tarkvara kavandamine
+            </h3>
+            <p>
+                Kavandatakse arendatava toote süsteem ja struktuur, keskendudes selle funktsionaalsetele omadustele.
+                 Need võivad olla andmestruktuurid, tarkvara arhitektuur, liideste omadused ja protseduurilised ning algoritmilised detailid.
+                 Etapi jooksul tehtud töö dokumenteeritakse ning dokumentatsiooni põhjal hinnatakse teostuse jooksul projekti kvaliteeti.
+            </p>
+        </li>
+        <li>
+            <h3>
+                Töö teostus ning moodulite testimine
+            </h3>
+            <p>
+                Eelmistes etappides valminud kavandi järgi toimub toote arendus, mille käigus luuakse programm või moodulite kogum. 
+                Testitakse valminud mooduleid ja moodulikogumikke. Olenevalt dokumenteeritud kavandi detailsusest oleneb sellest etapist 
+                projekti arenduslihtsus - mida detailsem on projekt, seda lihtsam ja mehhaanilisem saab olla teostuse etapp.
+            </p>
+        </li>
+        <li>
+            <h3>
+                Integratsioon ja süsteemi testimine
+            </h3>
+            <p>
+                Toimub kogu valminud tarkvarasüsteemi testimine, peale mida tarnitakse toodet kliendile ja/või sihtrühmale. 
+                Testitakse lähtuvalt süsteemi ühilduvusest varem dokumenteerituga (kas süsteem oma funktsionaalsuse osas nõudeid täidab ning kontrollitakse süsteemi detaile).
+            </p>
+        </li>
+        <li>
+            <h3>Kasutamine ja hooldus</h3>
+            <p>
+                Tegemist on kõige pikema tarkvara elutsükli etapiga. Süsteemi võidakse muuta, kui kasutajad avastavad vigu, ümbrus ja 
+                töökeskkond muutuvad või klient vajab uut funktsionaalsust.
+                Arendustöö teostamiseks korratakse kõiki eelnevaid etappe, kuid ainult olemasoleva süsteemi muutmise eesmärgil.
+            </p>
+        </li>
+    </ol>
+    <br/>
+
+    <p>
+        Iga etapi tulemusena tekib dokumentatsioon, mis kirjeldab vastavas etapis saavutatud tulemit. 
+        Kogu dokumentatsioon kinnitatakse, järgnev etapp ei tohi olla samaaegselt töös, kui eelmine pole lõpetatud.
+    </p>
+
+    <!-- <h2>
+        Mudeli joonis:
+    </h2> -->
+    <img src="../pildid/waterfall.jpeg">
+
+    <h2>
+        Mudeli head ja vead
+    </h2>
+     <table>
+        <tr>
+            <th>Head</th>
+            <th>Vead</th>
+        </tr>
+        <tr>
+            <td>Selgesti defineeritud eesmärgid ja tähtajad</td>
+            <td>Testimine toimub enamasti elutsükli lõpus</td>
+        </tr>
+        <tr>
+            <td>Heade kodeerimispraktikate kinnistamine meeskonnas</td>
+            <td>Mudel on liiga jäik, töö käigus leitud suuremate vigade korral 
+                võib osutuda vajalikuks alustada kogu tsükkel uuesti nullist
+            </td>
+        </tr>
+        <tr>
+            <td>Konkreetne struktuur lihtsustab ülesannete korraldust ja jälgimist</td>
+            <td>Ei anna ruumi töö käigus esitatud uuenduste või muudatuste soovidele kliendi poolt</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <div>
+        <h3>
+            Viited kasutatud infole:
+        </h3>
+
+        <a href=
+           "https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html"
+        >
+            EUCIP e-õppe arhiiv
+        </a>
+    </div>
+    
+
+</body>
+</html>
