@@ -1,27 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inkrementaalne mudel</title>
 </head>
+
 <body>
     <h1>
         Inkrementaalne arendusmudel
     </h1>
-    <hr/>
+    <hr />
 
     <p>
-        Inkrementaalne ehk järk-järguline (ingl. k. <i>successive</i>) arendusmudel, mille käigus ehitatakse esmalt lihtne töötav
+        Inkrementaalne ehk järk-järguline (ingl. k. <i>successive</i>) arendusmudel, mille käigus ehitatakse esmalt
+        lihtne töötav
         süsteem valmis ning antakse kliendile üle. Seejärel implementeeritakse ning antakse üle mitmeid järk-järgulisi
         iteratsioone, kuni on saavutatud soovitud lõplik versioon.
     </p>
     <p>
         Mudeli eesmärk on paremini toime tulla varasema kosemudeli jäikade omadustega, kuna reaalsuses
         võib arendajatel olla vajalik teha töö käigus erakorralisi muudatusi tulenevalt muudatustest kliendi
-        soovides, turul, tehnoloogiates ning seadustes. Kosemudeli puhul viiks sellistele muutustele reageerimine 
-        projekti kulud kõvasti üles, mistõttu agiilsed meetodid nagu inkrementaalne mudel aitavad arendajatel paremini reageerida.
+        soovides, turul, tehnoloogiates ning seadustes. Kosemudeli puhul viiks sellistele muutustele reageerimine
+        projekti kulud kõvasti üles, mistõttu agiilsed meetodid nagu inkrementaalne mudel aitavad arendajatel paremini
+        reageerida.
     </p>
-    
+    <p>
+        Üks olulisimaid erinevusi inkrementaalsel mudelil kosemudeliga võrreldes on see, et
+        see on ajagraafikupõhine ega ei tugine mingil täielikult valmiskirjutatud kaval. Tänu sellele on võimalik
+        arendada erinevaid
+        programmiosi näiteks samaaegselt. Näiteks saab teha prototüübi kasutajaliidesele, millega saab kliendile
+        vahendada visuaalset
+        infot valmiva programmi kohta või minimaalse töötava toote (MVP - minimum viable product), mis katab pogrammi
+        nõuetes kirjeldatud
+        keskset funktsiooni.
+    </p>
+
+    <h2>
+        Inkrementaalse arenduse tegevuste käik
+    </h2>
+
+    <div>
+        <h3>
+            Nõuete kirjeldus
+        </h3>
+
+        <p>
+            Defineeritakse arendatava tarkvaratoote olulisemad funktsioonid ja omadused, mis kirjeldatakse nõuetes.
+            Nõuded jaotatakse tähtsamateks ja vähem tähtsamateks. Tähtsmate nõuete alla lähevad enamasti kliendile enim
+            väärtust toovad nõuded.
+        </p>
+        <p>
+            Vastavalt nõuetele kujuneb esialgne plaan inkrementide kohta, mille tagant klient oma toodet saama hakkab.
+            Iga inkrement peaks tarnima kliendile
+            mingisuguse toimiva osa tootest.
+        </p>
+    </div>
+
+    <div>
+        <h3>
+            Süsteemi arendus
+        </h3>
+        <p>
+            Iga inkrementi ehk osa saab arendada, kasutades erinevaid eksisteerivaid arendumudeleid, mis võivad olla
+            teised väledad meetodid, aga ka kosemeetod.
+            Sobiva töömudeli määrab suuresti arendatav programmiosa, selle vajadused ning arendusmeeskonna eelistused.
+        </p>
+    </div>
+
+    <div>
+        <h3>
+            Arendusega samaaegne nõuete tähendus
+        </h3>
+        <p>
+            Kui arendatava programmiosa nõuded on külmutatud (ehk neid hetkel ei muudeta), siis teiste <b>mitte
+                arenduses olevate </b> osade nõudeid on võimalik muuta.
+        </p>
+    </div>
+    <div>
+        <h3>
+            Tarne ja integratsioon
+        </h3>
+        <p>
+            Kui programmiosa valmis saab, tarnitakse see kliendile, kes saab selle töösse rakendada ning seda
+            põhjalikult testida.
+            See aitab omakorda kliendil täpsustada nõudeid järgmiste osade jaoks. Seejärel võetakse käsile järgmine
+            inkrement/osa ning iga järgmine valmiv osa liidestatakse
+            olemasoleva süsteemiga.
+        </p>
+    </div>
+
+    <h2>
+        Inkrementaalse arenduse eelised ja probleemid
+    </h2>
+
+    <table class="table" style="border:3px;">
+        <thead>
+            <tr>
+                <th>
+                    Eelised
+                </th>
+                <th>
+                    Probleemid
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    Kulutused on väiksemad, kuna kliendi soovide muutuste ajendil tehtav analüüsi
+                    ja dokumentatsiooni hulk väheneb oluliselt võrreldes kosemudeliga.
+                </td>
+
+                <td>
+                    Kiire arenduse puhul on rojekti progressi raske jälgida, kuid samal ajal on ebapraktiline
+                    tekitada dokumentatsiooni iga versioonimuudatuse jaoks.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Kliendiga toimub kiirem infovahetus, klient saab anda tagasisidet olemasolevale arendustööle
+                    selle valmimise käigus, samuti näeb ta projekti valmimisprogressi ning saab vajadusel täpsustada
+                    uusi nõudeid ja soove.
+                </td>
+
+                <td>
+                    Süsteemi struktuur aja jooksul degreerub - pidevalt uusi (ja mitteplaneeritud) osi juurde arendades
+                    kipub projekti sisemise struktuuri kvaliteet ja loetavus kannatama. See tekitab vajaduse teostada regulaarset
+                    koodi korrashoidu.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Klient saab kohe pärast arendustöö lõppu võtta funktsioneerivad osad kasutusele, mis annab talle varem kasu võrreldes
+                    tootega, mida arendatakse jäiga arendusmudeliga.
+                </td>
+
+                <td>
+                    Mitteplaanipäraste iteratsioonide lisandumine arenduse käigus võib oluliselt tõsta projekti kulusid. 
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <img src="../pildid/incremental-model.png">
+    </div>
+
+    <h2>
+        Inkrementaalse ja iteratiivse arendusmudeli erinevused
+    </h2>
+
+    <p>
+        Kuna inkrementaalne ja iteratiivne arendus on oma nimede poolest sarnased, kipuvad need
+        inimestel tihti sassi minema. Ometi on nad oma olemuselt üsna erinevad.
+        <ul>
+            <li>
+                <b>Inkrementaalne</b> arendus on tarkvaratoote arendus, kus iga inkremendi ehk osa jooksul valmib toimiv tarkvara osa, mis integreeritakse olemasoleva süsteemiga.
+            </li>
+
+            <li>
+                <b>Iteratiivne</b> arendus on muutmisstrateegia, kus parandatakse või tehakse ümber juba olemsaolev süsteem, et seda täiustada ehk lisada uus iteratsioon.
+            </li>
+        </ul>
+    </p>
+
+    <div>
+        <h3>
+            Viited kasutatud infole:
+        </h3>
+
+        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1222_inkrementaalne_arendusmudel.html">
+            EUCIP e-õppe arhiiv
+        </a>
+    </div>
+
 </body>
+
 </html>
