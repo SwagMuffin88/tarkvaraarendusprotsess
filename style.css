@@ -1,0 +1,17 @@
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: justify;
+    padding: 18px;
+}
+
+table {
+    background-color: blanchedalmond;
+    border-style: solid;
+    border-collapse: collapse;
+
+}
+
+td, tr , th{
+    border-style: solid;
+    padding: 5px;
+}
