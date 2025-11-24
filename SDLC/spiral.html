@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Spiraalmudel</title>
 </head>
 
@@ -15,7 +16,8 @@
 
     <p>
         Spiraalmudel on üks <b>iteratiivsetest</b> (eristada inkrementaalsest) meetoditest, mille kulgemist
-        saab visualiseerida spiraaliga. Lisaks iteratiivsele meetodile kasutab see ka võtteid koskmudelist.
+        saab visualiseerida spiraaliga. Meetodit kirjeldas esimest korda 1986. aastal Barry Boehm. 
+        Lisaks iteratiivsele meetodile kasutab see ka võtteid koskmudelist.
     </p>
 
     <p>
@@ -23,6 +25,127 @@
         sümboliseerib täielikku valmis arendustsüklit alates nõuete analüüsist kuni tarkvara loomiseni, testimiseni, 
         tarnimiseni ning hooldamiseni.
     </p>
+
+    <div>
+        <h2>
+            Arenduse tegevuste käik spiraalmudelis
+        </h2>
+
+        <p>
+            Spiraalmudelis on iga kordust/inkrementi võimalik jaotada omakorda kolme kuni kuute sektorisse, mis
+            võivad üksteisest mahu ja keerukuse poolest erineda. Näiteks Boehmi põhjal jagunevad sektorid:
+        </p>
+
+        <ol>
+            <li>
+                <h4>Eesmärkide seadmine</h4>
+                <p>
+                    Määratakse iteratsiooni eesmärgid ja piirangud, defineeritakse võimalikud kaasnevad riskid ning
+                    koostatakse vastavalt juhtimisplaan.
+                </p>
+            </li>
+            <li>
+                <h4>
+                    Riskide hindamine ja maandamine
+                </h4>
+                <p>
+                    Analüüsitakse leitud võimalikud riskid ning tehakse sellest lähtuvalt riskimaandamist näiteks 
+                    prototüüpide loomise näol ebapiisavate nõudmiste puhul. Üks olulisimaid erinevusi võrreldes teiste
+                    arendusmudelitega, kuna riskimaandamine on arvestatud mudelis sisse juba eraldi etapina. Selle 
+                    eesmärk on aidata vältida riskide realiseerimist ning sellega kaasnevaid tagajärgi - tähtaegade
+                    ületamine, kulude suurenemine jne.
+                </p>
+            </li>
+            <li>
+                <h4>
+                    Arendus ja valideerimine
+                </h4>
+                
+                <p>
+                    Lähtuvalt defineeritud riskidest valitakse projekti või eraldi iteratsiooni jaoks sobiv 
+                    arendusmudel. Valitav mudel peab seejuures aitama vähendada neid riske, näiteks ebakindluse
+                    puhul kasutajaliideses võidakse otsustada luua prototüüpe selle jaoks.
+                </p>
+            </li>
+            <li>
+                <h4>
+                    Planeerimine
+                </h4>
+
+                <p>
+                    Sektori lõpus tehakse hinnang projekti progressist ning vajadusel luuakse plaan uue iteratsiooni jaoks.
+                </p>
+            </li>
+        </ol>
+    </div>
+
+    <div>
+        <img src="../pildid/spiral.png">
+    </div>
+
+    <div>
+        <h2>
+            Spiraalmudeli arenduse eelised ja probleemid
+        </h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Eelised
+                    </th>
+                    <th>
+                        Probleemid
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        Kesksel kohal on riskijuhtimine, mis aitab oluliselt vähendada riskide realiseerumisest
+                        tingitud probleeme projektis.
+                    </td>
+                    <td>
+                        Teiste mudelitega võrreldes keerulisem, mistõttu nõuab efektiivseks kasutuseks kogenud arendajaid.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Iteratiivne lähenemine teeb mudeli väga paindlikuks ja probleemidele reageerimise efektiivseks.
+                    </td>
+                    <td>
+                        Kuna kindlat iteratsioonide arvu ette pole antud, on ajaplaneerimine raske selle mudeli puhul.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Hindamisfaas iga iteratsiooni lõpus võimaldab tihedat kommunikatsiooni kliendiga.
+                    </td>
+                    <td>
+                        Edukaks riskijuhtimiseks on nõutud, et tiimis oleks kindlasti olemas selle jaoks kõrgelt kogenud ekspert.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+   
+    
+
+    <hr/>
+    <div>
+        <h3>
+            Viited kasutatud infole:
+        </h3>
+
+        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1223_spiraalmudel.html">
+            EUCIP e-õppe arhiiv
+        </a>
+    </div>
+    
 
 </body>
 
