@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Minu uus Tarkvara Arendusprotsessi ainemapp</title>
+    <style>
+        td {
+            padding: 20px;
+        }
+        th {
+            font-weight: bolder;
+        }
+    </style>
 </head>
 <body>
     <h1>Tarkvara Arendusprotsessi tehtud tööd</h1>
@@ -15,46 +23,60 @@
     </h2>
 
     <div>
-        <a href="SDLC/sdlc.html">
-            Üldiselt - mis see on
-        </a>
-    </div>
-
-    <div>
-        <a href="./CASE/index.html">
-            CASE vahendid
-        </a>
-    </div>
-
-    <div>
-        <a href="./UML/index.html">
-            Unified Modeling Language
-        </a>
-    </div>
-    
-    <div>
-        <a href="./BTC/index.html">
-            BitCoin Calculator
-        </a>
+        <ul style="list-style: none; display: grid; gap:10px">
+            <li>
+                <a href="SDLC/sdlc.html">
+                    Üldiselt - mis see on
+                </a>
+            </li>
+            <li>
+                <a href="./CASE/index.html">
+                    CASE vahendid
+                </a>
+            </li>
+            <li>
+                <a href="./UML/index.html">
+                    Unified Modeling Language
+                </a>
+            </li>
+            <li>
+                <a href="./BTC/index.html">
+                    BitCoin Calculator
+                </a>
+            </li>
+        </ul>
+        
     </div>
 
     <h2>Minust</h2>
-    <table>
+    <div style="justify-items: center;">
+        <table style="table-layout: auto;">
         <tr>
-            <td>Minu nimi</td>
-            <td>Mida teen</td>
-            <td>Kust tulen</td>
-            <td>Pilt</td>
+            <th>
+                Minu nimi
+            </th>
+            <th>
+                Mida teen
+            </th>
+            <th>
+                Kust tulen
+            </th>
+            <th>
+                Pilt
+            </th>
         </tr>
         <tr>
             <td>Katri Lotamõis</td>
             <td>Õpin tarkvaraarendust</td>
             <td>Laagri alevikust</td>
             <td>
-                <img src="pildid/photo_2025-11-12_09-31-35.jpg" width="30%">
+                <img src="pildid/photo_2025-11-12_09-31-35.jpg" style="width: 200px; padding: auto;" >
             </td>
         </tr>
     </table>
+    </div>
+    
+    <br>
     <hr/>
 
     <footer>
