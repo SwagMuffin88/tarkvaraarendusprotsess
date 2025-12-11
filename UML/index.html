@@ -52,7 +52,7 @@
 
     <div style="align-items: top;">
         <ul style="list-style: none; display: inline-block;">
-            <ul style="list-style: none; display: grid; gap: 10px;">
+            <ul style="list-style: square; display: grid; gap: 10px;">
                 <li>
                     <a href="./flowchart.html">
                         Vooskeem (<i>flowchart</i>)
@@ -82,7 +82,7 @@
         </ul>
 
         <ul style="list-style: none; display: inline-block;">
-            <ul style="list-style: none; display: grid; gap: 10px;">
+            <ul style="list-style: square; display: grid; gap: 10px;">
 
                 <li>
                     Tegevusdiagramm (<i>activity diagram</i>)
@@ -116,55 +116,102 @@
 
         <div>
             <h3>
-                Kasutuslooskeem
+                Kasutuslooskeem (<i>Use case diagram</i>)
+            </h3>
+            
+            <p>
+                Kasutuslooskeem kirjeldab süsteemi funktsionaalsust kasutusloost lähtudes. See on süsteemi
+                funktsionaalsuse (<b>kasutuslugude</b>) ja seda kasutava keskkonna (<b>"aktorite"</b>) mudel. Kasutuslood
+                aitavad arendusmeeskonnal luua seoseid süsteemilt nõutava "mida" ja "kuidas" vahel - mida
+                süsteemilt nõutud on ja kuidas see süsteem kasutajale seda kätte toimetab.
+            </p>
+            <div style="text-align: center; padding: 40px;">
+                <img src="https://cdn-images.visual-paradigm.com/guide/what-is-uml/11-use-case-diagram.png" alt="">
+            </div>
+        </div>
+        <hr>
+
+        <div>
+            <h3 >
+                Klassiskeem (<i>Class diagram</i>)
             </h3>
 
             <p>
-
+                Tegemist on skeemitüübiga, mis on <b>objektiorienteeritud meetodites</b> väga laialt levinud.
+                Seda kasutatakse üksikasjalikuma süsteemidisaini loomiseks olemasolevate kasutuslugude põhjal.
             </p>
-
+            <p>
+                See kirjeldab süsteemis leiduvaid objekte ja nendevahelisi erinevaid staatilisi suhteid.
+            </p>
+            <div style="text-align: center; padding: 40px;">
+                <img src="https://cdn-images.visual-paradigm.com/guide/what-is-uml/03-class-diagram-example.png" alt="">
+            </div>
         </div>
+        <hr>
 
         <div>
             <h3>
-                Klassidiagramm
-            </h3>
-
-        </div>
-
-        <div>
-            <h3>
-                Jadaskeem
+                Jadaskeem (<i>Sequence diagram</i>)
             </h3>
             <p>
-
+                Jadaskeem kirjeldab süsteemis leiduvate objektide omavahelist suhtlemist mingis kindlas
+                kasutusloo olukorras. Oluline on selle skeemitüübi puhul interaktsioonide ajaline 
+                järjestus (<i>time <b>sequence</b></i>).
             </p>
-
+            <div style="text-align: center; padding: 40px;">
+                <img src="https://cdn-images.visual-paradigm.com/guide/what-is-uml/14-sequence-diagram.png" alt="">
+            </div>
         </div>
+        <hr>
 
         <div>
             <h3>
-                Olekuskeem
+                Olekuskeem (<i>State (machine) diagram</i>)
             </h3>
-
             <p>
-
+                Kirjeldab erinevaid olekuid, mida süsteemis olevad objektid läbivad oma elutsükli jooksul.
+                Vastavalt süsteemis toimuvatele sündmustele muudavad objektid oma olekut. Skeemil on kirjeldatud ka
+                objekti algne olek ning elutsükli lõpus olev viimane olek peale muutusi.
             </p>
-
+            <div style="text-align: center; padding: 40px;">
+                <img src="https://cdn-images.visual-paradigm.com/guide/what-is-uml/13-state-machine-diagram.png" alt="">
+            </div>
         </div>
+        <hr>
 
         <div>
             <h3>
-                <!-- Ise valitud tüüp-->
+                Levitusskeem (<i>Deployment diagram</i>)
             </h3>
-
             <p>
-
+                Aitab visualiseerida ja planeerida objektiorienteeritud tarkvarasüsteemide <b>füüsilist</b> poolt - 
+                kuidas tarkvara osad jaotatakse erinevate riistvaraliste elementide vahel nagu serverid ja 
+                isiklikud arvutiseadmed. Skeemil on kujutatud "artefaktid", mis sümboliseerivad reaalseid 
+                riistvaralisi seadmeid, millele tarkvara levitatakse.
             </p>
-
+            <div style="text-align: center; padding: 40px;">
+                <img src="https://cdn-images.visual-paradigm.com/guide/what-is-uml/05-deployment-diagarm.png" alt="">
+            </div>
         </div>
-
     </div>
+    <hr>
+
+    <div>
+        <h3>
+            Viited allikatele
+        </h3>
+        <p>
+            <a href="https://www.tud.ttu.ee/im/Vladimir.Viies/materials/YLDINEkaust/Helena_materjalid/objektid/objekt01/osa07.html">
+                Lühiülevaade UML'ist - TalTech abimaterjalid
+            </a>
+        </p>
+        <p>
+            <a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/">
+                What is Unified Modeling Language (UML)? - Visual Paradigm
+            </a>
+        </p>
+    </div>
+    <hr>
 
     <div>
         <a href="../index.html">Tagasi</a>
