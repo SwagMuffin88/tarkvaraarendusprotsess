@@ -5,19 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <title>UML</title>
+    <title>UML ja diagrammid</title>
 </head>
 
 <body>
 
     <h1>
-        UML diagrammikeel
+        UML diagrammikeel, visuaalsed diagrammid tarkvaraarenduses
     </h1>
     <hr>
 
     <p>
-        UML (ing. k. <i>Unified Modeling Language</i>) on visuaalne modelleerimiskeel, mis aitab tarkvaraarenduses nii
-        kliendi, arendaja, kui ka
+        Tarkvaraarenduses on kasutusel palju erinevaid töövahendeid, et visualiseerida erinevaid aspekte
+        loodavast tarkvarast - nii kasutajaliidest/-kogemust, süsteemide arhitektuuri, aga ka üksikute 
+        keerulisemate algoritmide kirjeldamiseks ja üksikute etappide väljaselgitamiseks.
+    </p>
+
+    <p>
+        Visuaalsete diagrammide koostamine ja kasutamine on väga oluline osa tarkvararenduse projektides,
+        eriti osana dokumentatsioonist. <b>Suuremates projektides</b> hõlbustab see töövoogu ning aitab hoida skoopi
+        stabiilsena.
+    </p>
+
+    <p>
+        Allpool on täpsemalt räägitud <b>ühtsest modelleerimiskeelest UML</b>, mis on konkreetne keel, 
+        mida kasutatakse erinevate diagrammide loomisel, kuid lisaks on infotehnoloogias levinud 
+        ka teisi meetodeid tarkvaraprojekti osade visualiseerimiseks. Allpool viidetes on lähemalt tutvustatud
+        neist kahte:
+        <ul style="list-style: square; display: grid;">
+            <li>
+                <h4>
+                    <a href="./flowchart.html">
+                    Vooskeem (<i>flowchart</i>)
+                    </a>
+                </h4>
+            </li>
+            <li>
+                <h4>
+                    <a href="./ERD.html">
+                    Olemi-suhte diagramm (<i>entity relation diagram</i>)
+                    </a>
+                </h4>
+            </li>
+        </ul>
+    </p>
+
+    <h2>
+        Mis on UML?
+    </h2>
+
+    <p>
+        UML ehk <b>ühtne mudelleerimiskeel </b>(ing. k. <i>Unified Modeling Language</i>) on visuaalne 
+        modelleerimiskeel, mis aitab tarkvaraarenduses nii kliendi, arendaja, kui ka
         kui ka muudele projektiga kokkupuutuvatele isikutele visualiseerida arendatava toote sisemist struktuuri.
         UML on ka harukeel, mis tähendab, et on olemas erinevaid diagrammiliike erinevate tasandite kuvamise jaoks.
     </p>
@@ -27,7 +66,7 @@
         tasemetel
         vaja minevatele kirjeldustele. Tarkvaratoote käitumise kirjeldamiseks on näiteks olemas käitumisdiagramm,
         andmestruktuuri kirjeldamiseks
-        aga olemidiagramm ehk ERD.
+        aga olemidiagramm.
     </p>
 
     <p>
@@ -42,22 +81,16 @@
         UML tekkis vajadusest kujutada objektiorienteeritud programmeerimise jaoks ühtset keelt, mis kuvaks protsessi
         ilma koodita.
         Algselt tekkis, kui arendajad <b>Grady Booch</b> ja <b>James Rumbaugh</b> ühendasin enda loodud diagrammikeeled.
-        Aja jooksul tekkis sinna
-        teisi harusid juurde.
+        Aja jooksul tekkis sinna teisi harusid juurde.
     </p>
 
     <h2>
-        Kui palju erinevaid diagrammiliike olemas on?
+        Kui palju erinevaid UML-i kasutavaid diagrammiliike olemas on?
     </h2>
 
     <div style="align-items: top;">
         <ul style="list-style: none; display: inline-block;">
             <ul style="list-style: square; display: grid; gap: 10px;">
-                <li>
-                    <a href="./flowchart.html">
-                        Vooskeem (<i>flowchart</i>)
-                    </a>
-                </li>
                 <li>
                     Klassidiagramm (<i>class diagram</i>)
                 </li>
@@ -68,25 +101,19 @@
                     Koostöödiagramm (<i>collaboration diagram</i>)
                 </li>
                 <li>
-                    <a href="./ERD.html">
-                        Olemidiagramm (<i>entity relation diagram</i>)
-                    </a>
-                </li>
-                <li>
                     Kasutuslooskeem (<i>use case diagram</i>)
                 </li>
                 <li>
                     Olekuskeem (<i>state diagram</i>)
+                </li>
+                <li>
+                    Tegevusdiagramm (<i>activity diagram</i>)
                 </li>
             </ul>
         </ul>
 
         <ul style="list-style: none; display: inline-block;">
             <ul style="list-style: square; display: grid; gap: 10px;">
-
-                <li>
-                    Tegevusdiagramm (<i>activity diagram</i>)
-                </li>
                 <li>
                     Komponendi diagramm (<i>component diagram</i>)
                 </li>
@@ -107,6 +134,10 @@
                 </li>
             </ul>
         </ul>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+        <img src="../pildid/UML-Diagrams.jpg" alt="">
     </div>
 
     <div>
@@ -208,6 +239,17 @@
         <p>
             <a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/">
                 What is Unified Modeling Language (UML)? - Visual Paradigm
+            </a>
+        </p>
+        <p>
+            <a href="https://minitorn.tlu.ee/~jaagup/kool/java/tarkvara/liina_uml.pdf">
+                Liina Lang. UML-i õppematerjal. Bakalaureusetöö. Tallinna Pedagoogikaülikool,
+                Matemaatika-loodusteaduskond, Informaatika osakond. Juhendaja Juhan Ernits. Tallinn 2003
+            </a>
+        </p>
+        <p>
+            <a href="https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-introduction/">
+                Unified Modeling Language (UML) Diagrams - GeeksforGeeks
             </a>
         </p>
     </div>
