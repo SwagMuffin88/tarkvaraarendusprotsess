@@ -12,15 +12,63 @@
     </h1>
     <hr>
 
-    <div style="display: inline;">
+    <div style=" text-align: center;">
         <img src="../pildid/bitcoin/bitcoin1.png" style="width: 400px; padding: 20px;">
         <img src="../pildid/bitcoin/bitcoin2.png" style="width: 400px; padding: 20px;">
     </div>
 
     <div>
+        <h2>
+            Programmi kirjeldus
+        </h2>
+        <p>Tegemist on pisiprogrammiga, mille funktsioon on Bitcoini väärtuse konverteerimine kasutaja valitud
+            rahalisse valuutasse. Kasutaja saab valida etteantud valuutadest sobiva (hetkel on nimekirjas valikuks
+            saadaval <b>EUR</b>, <b>USD</b>, <b>GBP</b> ja <b>EEK</b>) ning sisestada Bitcoini hulga, mida ta valitud valuutasse konverteerida tahab.
+        </p>
+        <p>
+            Programm kasutab valuutade konverteerimiseks reaalajas kursse, mida vahendatakse programmile 
+            <b><a href="https://developers.coindesk.com/documentation/data-api/introduction">CoinDesk API</a>
+                </b>kaudu. Konverteeritud tulemus ümardatakse kahe komakohani.
+        </p>
+        <p>
+            Kuigi sisestamata Bitcoini kogus on siin programmis vaikimisi 0 ning tegu ei ole ebakorrektse sisendiga, siis
+            puuduoleva valuutalühendi väärtuse puhul käivitamisnuppu vajutades kuvatakse kasutajale teade, et ta valiks 
+            rippmenüüst sobiva valuuta.
+        </p>
+    </div>
+    <div>
+        <p>
+            Projekti valmimisel kasutasin enda jaoks uut raamistikku <b><a href="https://docs.avaloniaui.net/docs/overview/what-is-avalonia">
+                Avalonia UI
+            </a></b>, mille näol on tegemist kasutajaliidese
+            raamistikuga, mis võimaldab luua .NET rakendusi paljudel erinevatel operatsioonisüsteemidel.
+            See on toetatud nii Windowsil, Linuxil ja macOS-il, kui ka Androidil ja iOS-il ning sellega saab 
+            luua platvormist sõltumatuid programme, kasutades XAML ja C# keelt.
+        </p>
+        <p>
+            See Bitcoini kalkulaatori programm baseerub MVVM ehk <b><i>Model-View-View Model</i></b> mustril, kus
+            kasutatakse andmesidumist projekti vaate (<i>view</i>) ning vaatemudeli (<i>view model</i>) vahel andmete liigutamiseks. Tänu sellele on
+            projektis ka eraldatud programmi loogika ning kasutajaliidese visuaalne pool. <a href="https://docs.avaloniaui.net/docs/concepts/the-mvvm-pattern/">
+                Lähemalt MVVM mustrist.
+            </a>
+        </p>
+        <p style="text-align: center; margin-top: 30px;">
+            <img src="data:image/png;base64,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" alt="">
+        </p>
+    </div>
+    <div style="margin-top: 50px;">
+        <h2>
+            Programmi funktsionaalsuse vooskeem
+        </h2>
+        <div style="text-align: center;">
+            <img src="../pildid/bitcoin/bitcoin_flowchart.png" alt="" style="width: 45%;">
+        </div>
+    </div>
+
+    <div style="margin-top: 50px;">
         <h3>
             <a href="https://github.com/SwagMuffin88/BitcoinCalculator_AvaloniaUI">
-                Repo Githubis
+                Projekti repo Githubis
             </a>
         </h3>
     </div>
