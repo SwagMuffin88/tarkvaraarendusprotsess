@@ -5,7 +5,6 @@
 /projectSettingsUpdater.xml
 /modules.xml
 /contentModel.xml
-.idea/tarkvaraarendusprotsess.iml
 # Ignored default folder with query files
 /queries/
 # Datasource local storage ignored files
@@ -13,6 +12,6 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
-/.idea/
-.idea/tarkvaraarendusprotsess.iml
+
+/.idea/tarkvaraarendusprotsess.iml
 .idea/material_theme_project_new.xml
