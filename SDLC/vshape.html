@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
     <title>V-kujuline arendusmudel</title>
 </head>
 <body>
@@ -16,16 +17,66 @@
 
     <div>
         <p>
+            V-kujuline mudel on tarkvaraarendusprotsessi elutsükli mudel, kus protsesside
+            liikumist saab visualiseerida V-kujulises diagrammis. Seda tuntakse ka nime all
+            "<i><b>Verification
+            <scope style="font-style: normal; font-weight: normal">(kontrolli)</scope> and Validation
+            <scope style="font-style: normal; font-weight: normal">(kinnitamine)</scope> Model</b></i>". Selle
+            põhiomaduseks on see, et igale arendusetapile vastab samal tasemel testimisfaas ning iga uus etap algab alles
+            eelmise etapi testimisfaasi lõppemist.
+        </p>
 
+        <p>
+            V-mudel sobib hästi väiksematesse ning keskmistesse projektidesse, kus nõuded ning vahendid on hästi ja
+            selgelt defineeritud. Vähesel määral leidub ka allikaid, mis vihjavad erinevatele V-kujulise mudeli alamtüüpidele,
+            kuid kontrollitud allikaid sel teemal on vähe ja seetõttu neid pole siin välja toodud.
         </p>
     </div>
 
     <div>
-        <img src="" style="width: 50%">
+        <h3>Etapid</h3>
+        <h4>Kontrollifaasis:</h4>
+        <ol>
+            <li>
+                Nõuete kogumine ja analüüs, kliendi soovide välja selgitamine, projekti ulatuse hindamine
+            </li>
+            <li>
+                Süsteemi disainimise käigus analüüsitakse kogutud nõudeid ning luuakse plaan loodava süsteemi jaoks
+            </li>
+            <li>
+                Projektis kasutatava arhitektuuri valimine olemasolevatest nõuetest ning süsteemi disainist lähtudes
+            </li>
+            <li>
+                Süsteemi jagamine väikesteks mooduliteks, Low Level Design
+            </li>
+            <li>
+                Tarkvara arendamine lähtuvalt eelnevatest disainitud algosadest
+            </li>
+        </ol>
+
+        <h4>Kinnitamisefaasis:</h4>
+        <ol>
+            <li>
+                Ühiktestimine moodulite loomise faasis nende individuaalse funktsioneerimise kinnitamiseks
+            </li>
+            <li>
+                Integratsioontestimine arhitektuuri loomise faasis eesmärgiga veenduda, et loodud grupid töötavad omavahel ning ei tekita omavahel konflikte
+            </li>
+            <li>
+                Süsteemi testimine süsteemi loomise faasis tarkvara funktsionaalsete ootuste kinnitamiseks
+            </li>
+            <li>
+                Tarkvara testimine kliendipoolses süsteemis eesmärgiga leida kiirelt ühildumisprobleeme ning defekte reaalses kasutuskeskkonnas
+            </li>
+        </ol>
+    </div>
+
+    <div>
+        <img src="../pildid/software-Testing-SDLC-V-model.jpg" style="width: 40%">
     </div>
 
     <h2>
-
+        V-kujulise mudeli eelised ja probleemid
     </h2>
 
     <table class="table" style="border:3px; margin-bottom: 30px">
@@ -41,26 +92,21 @@
         </thead>
 
         <tbody>
-        <tr>
-            <td>
-            </td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            </td>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            </td>
-            <td>
-            </td>
-        </tr>
+            <tr>
+                <td>Lihtne aru saada</td>
+                <td>Mitte kuigi paindlik</td>
+            </tr>
+            <tr>
+                <td>Paljud testid sooritatakse enne reaalse koodi kirjutamist</td>
+                <td>Ei sobi keerukamatesse projektidesse</td>
+            </tr>
+            <tr>
+                <td>Ajasäästlik</td>
+                <td>Koodikirjutamise ajastuse tõttu ei looda projekti käigus algfaasis töötavaid prototüüpe</td>
+            </tr>
         </tbody>
     </table>
+    <hr>
 
     <div>
         <h3>
@@ -68,12 +114,14 @@
         </h3>
 
         <p>
-            <a href="">
+            <a href="https://www.geeksforgeeks.org/software-engineering/software-engineering-sdlc-v-model/">
+                SDLC V-Model - Software Engineering - GeeksforGeeks
             </a>
         </p>
 
         <p>
-            <a href="">
+            <a href="https://www.baeldung.com/cs/v-model">
+                Software Engineering: V-Shaped Model | Baeldung on Computer Science
             </a>
         </p>
     </div>
