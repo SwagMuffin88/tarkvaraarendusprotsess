@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll(".preview-link").forEach(link => {
         link.addEventListener("mouseenter", () => {
-            previewFrame.src = link.dataset.preview;
             previewBox.style.display = "block";
+            previewFrame.src = link.dataset.preview;
         });
 
         link.addEventListener("mousemove", e => {
