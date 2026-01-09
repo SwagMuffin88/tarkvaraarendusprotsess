@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#toc {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 2em;
+    background: #f9f9f9;
+}
+
+#toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#toc li {
+    margin: 0.3em 0;
+}
+
+#toc a {
+    text-decoration: none;
+}
+
+#toc a:hover {
+    text-decoration: underline;
+}

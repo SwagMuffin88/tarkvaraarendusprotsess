@@ -22,22 +22,22 @@ td, tr , th {
     margin-bottom: 30px;
 }
 
-#preview-box {
-    position: absolute;
-    width: 360px;
-    height: 220px;
-    background: white;
-    border: 1px solid #ccc;
-    display: none;
-    z-index: 1000;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-    pointer-events: none;
-}
+/*#preview-box {*/
+/*    position: absolute;*/
+/*    width: 360px;*/
+/*    height: 220px;*/
+/*    background: white;*/
+/*    border: 1px solid #ccc;*/
+/*    display: none;*/
+/*    z-index: 1000;*/
+/*    box-shadow: 0 6px 16px rgba(0,0,0,0.2);*/
+/*    pointer-events: none;*/
+/*}*/
 
-#preview-frame {
-    width: 200%;
-    height: 200%;
-    border: none;
-    transform: scale(0.5);
-    transform-origin: top left;
-}
+/*#preview-frame {*/
+/*    width: 200%;*/
+/*    height: 200%;*/
+/*    border: none;*/
+/*    transform: scale(0.5);*/
+/*    transform-origin: top left;*/
+/*}*/
