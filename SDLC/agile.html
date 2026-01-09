@@ -18,14 +18,23 @@
 
     <div>
         <p>
-            Agiilne metodoloogia (<i>Agile methodology</i>) on projektijuhtimise ning tarkvara arendamise üks lähenemisi,
-            milles on olulisel kohal paindlikkus, koostöö ning kliendikesksus. See ühendab endas nii
+            Agiilne ehk väle metodoloogia (<i>Agile methodology</i>) on projektijuhtimise ning tarkvara arendamise üks lähenemisi,
+            milles on olulisel kohal <b>paindlikkus, koostöö ning kliendikesksus</b>. See ühendab endas nii
             inkrementaalse, kui iteratiivse mudeli omadusi. Mõlemas mudelis tähtsustatakse toimiva toote
             kiiret väljalaskmist/tarnimist kliendile.
         </p>
 
         <p>
-            Öeldakse ka, et "Agile" ei ole üldse metodoloogia, vaid pigem "mindset". Selle eestmärk ei ole järgida
+            Välearendus tekkis vastukaaluks senistele traditsioonilistele "tardmeetoditele" (milleks näiteks on
+            <b><a href="./waterfall.html">kosemeetod</a></b>, millega kaasnesid nende jäikuse tõttu probleeme ülemääraste
+            kulutuste, ajagraafikutest mahajäämise ning vigaste lõpptoodetega. Kui vanemad meetodid panid väga palju
+            rõhku arendustööeelsele projektiplaneerimisele, dokumentatsioonile ja süsteemidisainilem, siis
+            välearenduses on keskpunktis meeskonna liikmete omavaheline suhtlus ja koostöö ning töö jooksul tekkivate
+            ootamatute muutuste vältimise asemel nende haldamine.
+        </p>
+
+        <p>
+            Öeldakse ka, et välearendus ei ole niiväga metodoloogia, vaid pigem tööfilosoofia, sest selle eestmärk ei ole järgida
             mingeid kindlaid rituaale või tehnikaid, pigem on see kogum meetodeid, mis aitavad töö käigus kiirelt
             reageerida. Seetõttu võib seda pidada ka üheks olulisemaks või silmapaistvamaks omaduseks agiilse mudeli juures.
         </p>
@@ -35,7 +44,7 @@
         Etapid
     </h2>
 
-    <ol>
+    <ol style="display: grid; gap: 10px">
         <li>
             Nõuete väljaselgitamine - meeskond identifitseerib ning dokumenteerib klientide ootused ning vajadused.
             Samuti defineeritakse projekti ulatus, eesmärgid ning vajadused, samuti pannakse paika projekti plaan.
@@ -54,12 +63,90 @@
         </li>
     </ol>
 
-    <div style="text-align: center; margin-bottom: 40px">
+    <div style="text-align: center; margin-bottom: 40px; margin-top: 40px">
         <img src="../pildid/sdlc_agile_model.jpg" alt="" style
         ="width:50%">
     </div>
 
-    <!--    TODO add subcategories list here    -->
+    <div>
+        <h2>
+            Populaarsemad agiilsed mudelid
+        </h2>
+
+        <div>
+            <h3>
+                Scrum
+            </h3>
+            <p>
+                Scrum metoodikat kasutavad tiimid otsustavad iseseisvalt, kuidas neile antud ülesannet täita ning
+                ei vaja selle töö jaoks abi teistelt väljaspool tiimi. Tiimi kuuluvad tavaliselt tooteomanik,
+                arendusmeeskond ja Scrumi juht (ehk <i>Scrum master</i>). Töö toimub ühe- kuni
+                neljanädalastes <b>iteratsioonides</b> ehk sprintides ning iga sprindi lõpuks peaks potentsiaalselt
+                valmima töötava ning testitud versiooni tarkvarast. Lisaks kuulub selle metoodika juurde teisi
+                spetsiifilisi "tseremooniaid", näiteks:
+
+                <ul style="list-style-type: square; display: grid; gap: 10px">
+                    <li>
+                        <i>Daily Scrum / stand-up</i> - 15-minutilise arendusmeeskonna koosolek päeva alguses
+                    </li>
+                    <li>
+                        <i>Sprint Review</i> - ülevaateline koosolek sprindi lõpus
+                    </li>
+                    <li>
+                        <i>Sprint Retrospective</i> -  koosolek <i>sprint review</i> ja uue sprindi alguse vahel,
+                        mille käigus analüüsitakse tiimi tööd lõppenud sprindi jooksul ning pannakse paika eesmärgid oma
+                        töökvaliteedi parandamiseks järmiseks springiks.
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div>
+            <h3>
+                Kanban
+            </h3>
+            
+            <p>
+                Kanbani näol on tegemist töö haldusmeetodiga, mis pärineb juba eelmise sajandi keskpaigast tootmissektorist.
+                Lisaks tarvkaraarendusele on see kasutusel veel mitmeski muus valdkonnas. Kanbani põhimõte seisneb
+                tehtava töö visualiseerimises, mis aitab tagada maksimaalset produktiivsust ja efektiivsust. Tarkvarasektorisee
+                jõudis see 2004. aastal ning selle eesmärk oli vähendada samaaegsete tööde hulka ning võimaldada arendajatel 
+                alustada uute ülesannetega siis, kui eelmine on lõpetatud.
+            </p>
+        </div>
+        
+        <h3>
+            <a href="./xtreme.html">Ekstreemprogrammeerimine</a>
+        </h3>
+        
+        <div>
+            <h3>
+                <i>Crystal</i>
+            </h3>
+            <p>
+                <i>Crystal</i> on välearenduse metoodika, mis on välja kasvanud ühest Agiilse Manifesto põhiväärtustest,
+                mis keskendub <b>inimestele ning nendevahelistele suhetele</b> tarkvaraarendusetiimis. Selle meetodi
+                põhiuskumused on,
+                et tiimid suudavad iseseisvalt leida viise oma töövoo täiustamiseks ning et iga projekt on unikaalne
+                ning
+                muutuv, mistõttu selle projektiga tegelev tiim teab kõige paremini, kuidas sellega toime tulla.
+            </p>
+        </div>
+        
+        <div>
+            <h3>
+                <i>Lean</i>
+            </h3>
+            <p>
+                Tegemist on samuti põhimõttega, mis eksisteeris juba enne tarkvaraarendust tootmissektoris. Oma nime sai
+                <i>Lean</i> Ameerika Ühendriikides leiutatud timmitud ehk kulusäästlikust tootmisviisist (<i>lean manufacturing</i>).
+                Sarnaselt oma eelkäijale keskendub see raamistik "prahi" eemaldamisele, ehk teisisõnu <b>vajalike ning
+                ebavajalike osade
+                tuvastamisele</b> projektis ning puhtalt vajaliku arendamisele.
+            </p>
+        </div>
+
+    </div>
 
     <h2>
         Agiilse metodoloogia eelised ja probleemid
@@ -118,6 +205,18 @@
         <p>
             <a href="https://www.geeksforgeeks.org/software-testing/what-is-agile-methodology/">
                 What is Agile Methodology - GeeksForGeeks
+            </a>
+        </p>
+
+        <p>
+            <a href="https://koren.ee/blogi/agiilne-arendus-ehk-kanban-scrum-ja-teised-kaasaegne-laehenemisviis-tarkvaraarenduses">
+                Agiilne arendus ehk Kanban, Scrum ja teised – kaasaegne lähenemisviis tarkvaraarenduses - Koren
+            </a>
+        </p>
+
+        <p>
+            <a href="https://wiki.itcollege.ee/index.php/V%C3%A4ledad_tarkvaraarenduse_mudelid">
+                Väledad tarkvaraarenduse mudelid - ICO Wiki
             </a>
         </p>
     </div>
