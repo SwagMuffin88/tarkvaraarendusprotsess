@@ -15,6 +15,11 @@
     </style>
 </head>
 <body>
+
+    <div id="preview-box">
+        <iframe id="preview-frame"></iframe>
+    </div>
+
     <h1>Tarkvara Arendusprotsessi tehtud tööd</h1>
     <hr/>
 
@@ -25,27 +30,27 @@
     <div>
         <ul style="list-style: square; display: grid; gap:10px">
             <li>
-                <a href="SDLC/sdlc.html">
+                <a href="./SDLC/sdlc.html" class="preview-link" data-preview="./SDLC/sdlc.html">
                     Tarkvaraarenduse elutsükli mudelid (<i>SDLC</i>)
                 </a>
             </li>
             <li>
-                <a href="./CASE/index.html">
+                <a href="./CASE/index.html" class="preview-link" data-preview="./CASE/index.html">
                     CASE vahendid
                 </a>
             </li>
             <li>
-                <a href="./UML/index.html">
+                <a href="./UML/index.html" class="preview-link" data-preview="./UML/index.html">
                     UML, visuaalsed diagrammid tarkvaraarenduses
                 </a>
             </li>
             <li>
-                <a href="./doc/index.html">
+                <a href="./doc/index.html" class="preview-link" data-preview="./doc/index.html">
                     Tarkvara dokumentatsioon
                 </a>
             </li>
             <li>
-                <a href="./bitcoin/index.html">
+                <a href="./bitcoin/index.html" class="preview-link" data-preview="./bitcoin/index.html">
                     Bitcoin kalkulaatori projekt
                 </a>
             </li>
@@ -75,7 +80,7 @@
             <td>Õpin tarkvaraarendust</td>
             <td>Laagri alevikust</td>
             <td>
-                <img src="pildid/photo_2025-11-12_09-31-35.jpg" style="width: 200px; padding: auto;" >
+                <img src="pildid/photo_2025-11-12_09-31-35.jpg" style="width: 200px; padding: inherit;" >
             </td>
         </tr>
     </table>
@@ -87,5 +92,8 @@
     <footer style="text-align: center;">
         <a href="https://github.com/SwagMuffin88">Minu profiil Githubis</a>
     </footer>
+
+    <script src="preview.js"></script>
+
 </body>
 </html>
