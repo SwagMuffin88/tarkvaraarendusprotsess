@@ -1,18 +1,52 @@
 body {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: justify;
-    padding: 18px;
+    /*font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    font-family: "Adwaita Mono", monospace;
+    text-align: justify-all;
+    padding: 40px;
+    border: lightpink 3px dotted;
+    border-radius: 15px;
+
+}
+
+h1 {
+    text-align: center;
+    color: palevioletred;
+}
+
+h2 {
+    color: palevioletred;;
+}
+
+h3 {
+    color: rosybrown;
+}
+
+ol li::marker {
+    color: rosybrown;
+}
+
+hr {
+    color: lavenderblush;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+ul {
+    list-style-type: circle;
+    display: grid;
+    gap:10px
 }
 
 table {
-    background-color: blanchedalmond;
-    border-style: solid;
+    background-color: lavenderblush;
+    border-style: dashed;
     border-collapse: collapse;
-
+    border-color: pink;
 }
 
 td, tr , th {
-    border-style: solid;
+    border-color: pink;
+    border-style: dotted;
     padding: 5px;
     text-align: center;
 }
@@ -22,22 +56,11 @@ td, tr , th {
     margin-bottom: 30px;
 }
 
-/*#preview-box {*/
-/*    position: absolute;*/
-/*    width: 360px;*/
-/*    height: 220px;*/
-/*    background: white;*/
-/*    border: 1px solid #ccc;*/
-/*    display: none;*/
-/*    z-index: 1000;*/
-/*    box-shadow: 0 6px 16px rgba(0,0,0,0.2);*/
-/*    pointer-events: none;*/
-/*}*/
+.chapter-section {
+    margin-top: 40px;
+}
 
-/*#preview-frame {*/
-/*    width: 200%;*/
-/*    height: 200%;*/
-/*    border: none;*/
-/*    transform: scale(0.5);*/
-/*    transform-origin: top left;*/
-/*}*/
+h4 {
+    color: palevioletred;
+    margin-top: 25px;
+}

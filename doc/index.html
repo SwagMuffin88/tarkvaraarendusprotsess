@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dokumentatsioon</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-        h3 {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 
 <body>
@@ -19,7 +14,7 @@
     </h1>
     <hr>
 
-    <div>
+    <div class="chapter-section">
         <p>
             Tarkvaraarenduse elutsüklis on erinevaid tegevusi, mille tulemusel tekib
             "artefakte", mis dokumenteerivad projektis tehtavaid/tehtud tegevusi ja nende tegijaid.
@@ -30,13 +25,10 @@
         </p>
     </div>
 
-    <div>
-        <!-- <h2>
-            Erinevad dokumentatsioonitüübid
-        </h2> -->
+    <div class="chapter-section">
         <p>
             On olemas erinevaid tüüpe dokumentatsioone, tüüpiliselt võib tarkvaraprojektis esineda:
-        <ul style="list-style: square; display: grid; gap: 10px;"">
+            <ul>
                 <li>
                     Süsteeminõuete dokument
                 </li>
@@ -56,229 +48,232 @@
         </p>
     </div>
 
-    <h2>
-        Erinevad dokumentatsioonitüübid ja nende eesmärgid:
-    </h2>
-
-    <div style="padding-left: 20px; padding-right: 45px;">
-            <h3 >
-                Süsteeminõuete dokument
-            </h3>
-            <p>
-                Erinevate arendustsüklite <b>analüüsietapi</b> väljund, kus defineeritakse
-                koostöös lõppkasutaja/kliendiga arendatava süsteemi erinevad nõuded.
-                Arvestatakse mõlema osapoole vajadusi ning selgitatakse välja erinevad takistavad tegurid.
-            </p>
-            <p>
-                Dokumendi eesmärk on anda arendajatele <b>arhitektuurse disaini dokumendi</b> loomise jaoks
-                juhised selle kohta, mida arendama peab.
-            </p>
-
-            <h4>
-                Mida süsteeminõuete dokument sisaldama peab?
-            </h4>
-            <div>
+    <div class="chapter-section" style="padding-left: 20px; padding-right: 45px;">
+        <h2>
+            Erinevad dokumentatsioonitüübid ja nende eesmärgid:
+        </h2>
+        <ol>
+            <li class="chapter-section">
+                <h3>
+                    Süsteeminõuete dokument
+                </h3>
                 <p>
-                    <ul>
-                        <li>
-                            <b>Sissejuhatus:</b>
-                            <p>Kirjeldab dokumendi eesmärgi (milleks, kellele), projekti ulatuse.
-                                Terminite sõnastik. Viited teistele dokumentidele (diagrammid, kasutajajuhendid,
-                                haldusjuhendid jne).
-                            </p>
-                        </li>
-
-                        <li>
-                            <b>
-                                Tootekirjeldus:
-                            </b>
-                            <p>Kirjeldab tarkvaratoodet, mida dokumendi abil arendatakse.</p>
-                        </li>
-
-                        <li>
-                            <b>
-                                Erinevate osapoolte profiilid:
-                            </b>
-                            <p>
-                                Kirjeldatakse kasutaja soovid tarkvaratootest, mida klient sellest saab. Mis on nende
-                                osapoolte
-                                erinevad vajadused ja kas neid on eelnevaid kogemusi sarnaste toodetega samast
-                                tootekategooriast.
-                            </p>
-
-                            <p>
-                                Näiteks rollipõhine tabel sotsiaalmeedia rakenduse jaoks:
-                            <table>
-                                <tr>
-                                    <th>
-                                        Roll
-                                    </th>
-                                    <th>
-                                        Tegevused/õigused
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Külaline
-                                    </td>
-                                    <td>
-                                        <ul style="list-style: none; display: grid; gap: 10px;">
-                                            <li>
-                                                Vaadata pealehte
-                                            </li>
-                                            <li>
-                                                Registreerida uus kasutada
-                                            </li>
-                                            <li>
-                                                Logida sisse olemasolevale kontole
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        Registreeritud kasutaja
-                                    </td>
-                                    <td>
-                                        <ul style="list-style: none; display: grid; gap: 10px;">
-                                            <li>
-                                                Saab teha kõike, mida <b>külaline</b>, k.a:
-                                            </li>
-                                            <li>
-                                                Luua ja avalikustada postitusi
-                                            </li>
-                                            <li>
-                                                Laadida üles pilte
-                                            </li>
-                                            <li>
-                                                Vaadata teiste kasutajate postitusi
-                                            </li>
-                                            <li>
-                                                Saata sõnumeid teistele kasutajatele
-                                            </li>
-                                            <li>
-                                                Kommenteerida postituste all
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        Administraator
-                                    </td>
-                                    <td>
-
-                                        <ul style="list-style: none; display: grid; gap: 10px;">
-                                            <li>
-                                                Saab teha kõike, mida <b>registreerinud kasutaja</b>, k.a:
-                                            </li>
-                                            <li>
-                                                Hallata tavakasutajate ligipääsu rakenduse funktsioonidele
-                                            </li>
-                                            <li>
-                                                Tavakasutajate postitusi, kommentaare ja pilte kustutada
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        Süsteemi administraator
-                                    </td>
-                                    <td>
-                                        <ul style="list-style: none; display: grid; gap: 10px;">
-                                            <li>
-                                                Hoolitseb rakenduse toimimise eest
-                                            </li>
-                                            <li>
-                                                Haldab andmebaase
-                                            </li>
-                                            <li>
-                                                Teeb korraldustöid
-                                            </li>
-                                            <li>
-                                                Konfigureerib ja jälgib muud statistikat hea kasutajakogemuse tagamiseks.
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <p>
-                                Profiilide detailne kirjeldamine aitab arendajatel paremini aru saada kasutajakogemusega
-                                seotud
-                                eesmärkidest tarkvaratoote arendamisel, et lõpuks jõuaks lõppkasutajani ootustele vastav
-                                toode.
-                            </p>
-                            </p>
-                        </li>
-
-                        <li>
-                            <b>
-                                Piirangud:
-                            </b>
-                            <p>
-                                Kirjeldatakse erinevad piirangud või tõkestavad aspektid, mis võivad arendusel ette tulla,
-                                kasutajatel
-                                esineda, arendusvahenditest tulenevad ja seaduslikud piirangud.
-                            </p>
-                        </li>
-
-                        <li>
-                            <b>
-                                Erinevad eeltingimused/sõltuvused:
-                            </b>
-                            <p>
-                                Toote loomist võib nõuda mingisugune eelnev tingimus, näiteks viiakse sisse riigisüsteemis
-                                muudatus, kuid digitaalne
-                                vahend selle jaoks puudub. Leitakse, et on vaja arendada vastav tööriist, et tagada
-                                riigisüsteemi muutuse ülalhoid.
-                            </p>
-                        </li>
-
-                        <li>
-                            <b>Käitumiskeskkond:</b>
-                            <p>
-                                Kirjeldab keskkonda, millel arendatud toode toimima peab. Sinna võivad kuuluda:
-                                <ul style="list-style: square; display: grid; gap: 10px;">
-                                    <li>
-                                        Operatsioonisüsteemid
-                                    </li>
-                                    <li>
-                                        Muud tarkvaralised platvormid
-                                    </li>
-                                    <li>
-                                        Riistvara (kliendi-/lõppkasutajapoolne)
-                                    </li>
-                                    <li>
-                                        Serverid (virtuaalsed, füüsilised)
-                                    </li>
-                                    <li>
-                                        Jälgimisvahendid
-                                    </li>
-                                    <li>
-                                        Andmebaasid
-                                    </li>
-                                </ul>
-                            </p>
-                        </li>
-
-                        <li>
-                            <b>Funktsionaalsed ja tehnilised nõuded:</b>
-                            <p>
-                                Kirjeldab detailselt erinevaid funktsionaalseid nõudeid, näiteks nõuded seotud turvalisuse
-                                ning programmi kasutatavusega.
-                                Kirjelduste hulgas võib esineda ka kasutajalugusid ja UML skeeme.
-                            </p>
-                        </li>
-                    </ul>
+                    Erinevate arendustsüklite <b>analüüsietapi</b> väljund, kus defineeritakse
+                    koostöös lõppkasutaja/kliendiga arendatava süsteemi erinevad nõuded.
+                    Arvestatakse mõlema osapoole vajadusi ning selgitatakse välja erinevad takistavad tegurid.
                 </p>
-            </div>
+                <p>
+                    Dokumendi eesmärk on anda arendajatele <b>arhitektuurse disaini dokumendi</b> loomise jaoks
+                    juhised selle kohta, mida arendama peab.
+                </p>
 
-            <div>
+                <h4>
+                    Mida süsteeminõuete dokument sisaldama peab?
+                </h4>
+                <div>
+                    <p>
+                        <ul>
+                            <li>
+                                <b>Sissejuhatus:</b>
+                                <p>Kirjeldab dokumendi eesmärgi (milleks, kellele), projekti ulatuse.
+                                    Terminite sõnastik. Viited teistele dokumentidele (diagrammid, kasutajajuhendid,
+                                    haldusjuhendid jne).
+                                </p>
+                            </li>
+
+                            <li>
+                                <b>
+                                    Tootekirjeldus:
+                                </b>
+                                <p>Kirjeldab tarkvaratoodet, mida dokumendi abil arendatakse.</p>
+                            </li>
+
+                            <li>
+                                <b>
+                                    Erinevate osapoolte profiilid:
+                                </b>
+                                <p>
+                                    Kirjeldatakse kasutaja soovid tarkvaratootest, mida klient sellest saab. Mis on nende
+                                    osapoolte
+                                    erinevad vajadused ja kas neid on eelnevaid kogemusi sarnaste toodetega samast
+                                    tootekategooriast.
+                                </p>
+
+                                <p>
+                                    Näiteks rollipõhine tabel sotsiaalmeedia rakenduse jaoks:
+                                <table style="margin-bottom: 30px">
+                                    <tr>
+                                        <th>
+                                            Roll
+                                        </th>
+                                        <th>
+                                            Tegevused/õigused
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Külaline
+                                        </td>
+                                        <td>
+                                            <ul style="list-style: none; display: grid; gap: 10px;">
+                                                <li>
+                                                    Vaadata pealehte
+                                                </li>
+                                                <li>
+                                                    Registreerida uus kasutada
+                                                </li>
+                                                <li>
+                                                    Logida sisse olemasolevale kontole
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Registreeritud kasutaja
+                                        </td>
+                                        <td>
+                                            <ul style="list-style: none; display: grid; gap: 10px;">
+                                                <li>
+                                                    Saab teha kõike, mida <b>külaline</b>, k.a:
+                                                </li>
+                                                <li>
+                                                    Luua ja avalikustada postitusi
+                                                </li>
+                                                <li>
+                                                    Laadida üles pilte
+                                                </li>
+                                                <li>
+                                                    Vaadata teiste kasutajate postitusi
+                                                </li>
+                                                <li>
+                                                    Saata sõnumeid teistele kasutajatele
+                                                </li>
+                                                <li>
+                                                    Kommenteerida postituste all
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Administraator
+                                        </td>
+                                        <td>
+
+                                            <ul style="list-style: none; display: grid; gap: 10px;">
+                                                <li>
+                                                    Saab teha kõike, mida <b>registreerinud kasutaja</b>, k.a:
+                                                </li>
+                                                <li>
+                                                    Hallata tavakasutajate ligipääsu rakenduse funktsioonidele
+                                                </li>
+                                                <li>
+                                                    Tavakasutajate postitusi, kommentaare ja pilte kustutada
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Süsteemi administraator
+                                        </td>
+                                        <td>
+                                            <ul style="list-style: none; display: grid; gap: 10px;">
+                                                <li>
+                                                    Hoolitseb rakenduse toimimise eest
+                                                </li>
+                                                <li>
+                                                    Haldab andmebaase
+                                                </li>
+                                                <li>
+                                                    Teeb korraldustöid
+                                                </li>
+                                                <li>
+                                                    Konfigureerib ja jälgib muud statistikat hea kasutajakogemuse tagamiseks.
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <p>
+                                    Profiilide detailne kirjeldamine aitab arendajatel paremini aru saada kasutajakogemusega
+                                    seotud
+                                    eesmärkidest tarkvaratoote arendamisel, et lõpuks jõuaks lõppkasutajani ootustele vastav
+                                    toode.
+                                </p>
+                                </p>
+                            </li>
+
+                            <li>
+                                <b>
+                                    Piirangud:
+                                </b>
+                                <p>
+                                    Kirjeldatakse erinevad piirangud või tõkestavad aspektid, mis võivad arendusel ette tulla,
+                                    kasutajatel
+                                    esineda, arendusvahenditest tulenevad ja seaduslikud piirangud.
+                                </p>
+                            </li>
+
+                            <li>
+                                <b>
+                                    Erinevad eeltingimused/sõltuvused:
+                                </b>
+                                <p>
+                                    Toote loomist võib nõuda mingisugune eelnev tingimus, näiteks viiakse sisse riigisüsteemis
+                                    muudatus, kuid digitaalne
+                                    vahend selle jaoks puudub. Leitakse, et on vaja arendada vastav tööriist, et tagada
+                                    riigisüsteemi muutuse ülalhoid.
+                                </p>
+                            </li>
+
+                            <li>
+                                <b>Käitumiskeskkond:</b>
+                                <p>
+                                    Kirjeldab keskkonda, millel arendatud toode toimima peab. Sinna võivad kuuluda:
+                                    <ul style="list-style: square; display: grid; gap: 10px;">
+                                        <li>
+                                            Operatsioonisüsteemid
+                                        </li>
+                                        <li>
+                                            Muud tarkvaralised platvormid
+                                        </li>
+                                        <li>
+                                            Riistvara (kliendi-/lõppkasutajapoolne)
+                                        </li>
+                                        <li>
+                                            Serverid (virtuaalsed, füüsilised)
+                                        </li>
+                                        <li>
+                                            Jälgimisvahendid
+                                        </li>
+                                        <li>
+                                            Andmebaasid
+                                        </li>
+                                    </ul>
+                                </p>
+                            </li>
+
+                            <li>
+                                <b>Funktsionaalsed ja tehnilised nõuded:</b>
+                                <p>
+                                    Kirjeldab detailselt erinevaid funktsionaalseid nõudeid, näiteks nõuded seotud turvalisuse
+                                    ning programmi kasutatavusega.
+                                    Kirjelduste hulgas võib esineda ka kasutajalugusid ja UML skeeme.
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </li>
+
+            <li class="chapter-section">
+                <div>
                 <h3>
                     Arhitektuurse disaini dokument
                 </h3>
@@ -449,7 +444,7 @@
                     </p>
                 </div>
 
-                <div style="margin-top: 50px; margin-bottom: 30px;">
+                <div>
                     <h4>
                         Arhitektuuriliste muudatuste tegemine ja nende kajastamine
                     </h4>
@@ -467,8 +462,9 @@
                     </p>
                 </div>
             </div>
+            </li>
 
-            <div>
+            <li class="chapter-section">
                 <h3>
                     Kasutajajuhend
                 </h3>
@@ -483,9 +479,9 @@
                     Kasutajajuhend on kirjutatud selle põhjal, mis on kasutajale näha ja saadaval, kuid selles pole
                     kirjeldatud programmisisesed detailid.
                 </p>
-            </div>
+            </li>
 
-            <div>
+            <li class="chapter-section">
                 <h3>
                     Haldusjuhend
                 </h3>
@@ -496,30 +492,30 @@
                 </p>
                 <p>
                     Dokumendis käsitletakse:
-                <ul style="list-style-type: square; display: grid; gap: 10px;">
-                    <li>
-                        Installatsiooni
-                    </li>
-                    <li>
-                        Andmesiiret
-                    </li>
-                    <li>
-                        Hooldust
-                    </li>
-                    <li>
-                        Administreerimist
-                    </li>
-                    <li>
-                        Konfigureerimist
-                    </li>
-                    <li>
-                        Kuidas viia sisse arendusmuudatusi peale arendustöö lõppu
-                    </li>
-                </ul>
+                    <ul style="list-style-type: square; display: grid; gap: 10px;">
+                        <li>
+                            Installatsiooni
+                        </li>
+                        <li>
+                            Andmesiiret
+                        </li>
+                        <li>
+                            Hooldust
+                        </li>
+                        <li>
+                            Administreerimist
+                        </li>
+                        <li>
+                            Konfigureerimist
+                        </li>
+                        <li>
+                            Kuidas viia sisse arendusmuudatusi peale arendustöö lõppu
+                        </li>
+                    </ul>
                 </p>
-            </div>
+            </li>
 
-            <div>
+            <li class="chapter-section">
                 <h3>
                     Projekti haldusdokumentatsioon
                 </h3>
@@ -527,7 +523,8 @@
                     Käsitleb projekti haldamisega seotud dokumente - ajakava planeerimine, seotud ressursid, arendustöö
                     hetkejärk jne.
                 </p>
-            </div>
+            </li>
+        </ol>
     </div>
     <hr style="margin-top: 30px;">
 
