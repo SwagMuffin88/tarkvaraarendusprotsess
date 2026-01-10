@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../toc.css">
+    <title>Erinevad tänapäeval levinud praktikad tarkvaraarenduses</title>
+</head>
+<body>
+    <h1>
+        Erinevad tänapäeval levinud praktikad tarkvaraarenduses
+    </h1>
+    <hr>
+
+    <div class="chapter-section">
+        <p>
+            Kuigi järgnevad praktikad tulevad erinevatest koolkondadest, on neid võimalik omavahel siduda asjaoluga,
+            et need kõik juhinduvad mingist:
+            <ul>
+                <li>
+                    kindlast tarkvaralisest eermärgist,
+                </li>
+                <li>
+                    spetsifikatsioonist,
+                </li>
+                <li>
+                    mudelist,
+                </li>
+                <li>
+                    käitumisest,
+                </li>
+                <li>
+                    kindlatest andmetest,
+                </li>
+                <li>
+                    kvaliteedinõuetest
+                </li>
+            </ul>
+        </p>
+        <p>
+            Neid praktikaid ei saa võrdselt liigitada mingi kindla metodoloogia alla, kuigi mitmed neist on levinud
+            näiteks <b><a href="../SDLC/agile.html">agiilsetes meetodites</a></b>, nende seas praktikad nagu <b>TDD</b> ja <b>BDD</b>.
+            Üldiselt saaks neid kõiki praktikaid kirjeldada kui "eesmärgist juhinduva tarkvaraarenduse"
+            (<i>Intent-Driven Software Development</i>) praktikad.
+        </p>
+    </div>
+
+    <section id="toc" style="margin-top: 40px">
+        <h2>Sisukord</h2>
+        <ul id="toc-list"></ul>
+    </section>
+
+    <div class="chapter-section">
+        <h2>
+            Trendid tänapäeva arenduses
+        </h2>
+        <p>
+            Aja jooksul on tarkvaraarendus liikunud järjest rohkem põhimõtte "kood kui tagajärg, mitte alguspunkt"
+            suunas ning seda on viimaste aastate jooksul hüppeliselt kiirendanud tehisaru areng, mis on aidanud
+            vähendada mehaanilisust mitmetes etappe arendustöös, nagu dokumentatsiooni koostamine ning lihtsamate
+            koodiplokkide kirjutamine. Ometi on need praktikad eksisteerinud juba enne tehisaru võidukäiku, kuid
+            nad on kandnud endas sama põhimõtet - <b>tarkvara arendus peaks olema juhitud selgelt määratletud kavatsustest,
+            mitte ainult tehnilisest teostusest.</b>
+        </p>
+
+    </div>
+
+    <div class="chapter-section">
+        <h2>
+            Testide kaudu juhitud arendus
+        </h2>
+        <p>
+            Need praktikad lähtuvad ideest, et enne koodi peavad alati tulema testid ning kood ehitatakse
+            nende testide "ümber". Selle eesmärk on ennetada vigu nende tuvastamise ja parandamise asemel.
+        </p>
+
+        <ul>
+            <li>
+                <h3>
+                    <i>TDD (Test-Driven Development)</i>
+                </h3>
+                <p>
+                    Lähenemisviis tarkvaraarenduses, kus enne funktsionaalsuse implementeerimist koodis luuakse vastavale osale
+                    testid (tavaliselt ühiktestid) ning koodi kirjutamisel lähtutakse sellest, et need testid peaksid alati läbi minema. Väga
+                    populaarne praktika näiteks <a href="../SDLC/xtreme.html">ekstreemprogrammeerimises</a>.
+                </p>
+            </li>
+            <li>
+                <h3>
+                    <i>ATDD (Acceptance Test–Driven Development)</i>
+                </h3>
+                <p>
+                    Üsna analoogne <i>TDD</i>-ga, kuigi selle keskmeks on kogu süsteemi
+                    testimine tervikuna eelduseks tarkvara funktsionaalsuse implementeerimisele koodis.
+                </p>
+            </li>
+            <li>
+                <h3>
+                    <i>CTDD (Continuous Test–Driven Development)</i>
+                </h3>
+                <p>
+                    Edasiarendus <i>TDD</i>-st, kus loodavat koodi testitakse pidevalt automatiseeritud ühiktestidega
+                    selle asemel, et arendaja manuaalselt neid teste läbi viib. Selle eesmärk on, et arendaja peab
+                    projekti algfaasis vaid looma testid ning hiljem pole tal vaja neid teste
+                    ise läbi viia.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="chapter-section">
+        <h2>
+            Käitumise- ja spetsifikatsioonikesksed praktikad
+        </h2>
+        <p>
+            Neid praktikaid seob keskendumine peamiselt sellele, mis on loodava tarkvarasüsteemi oodatud käitumine -
+            mida ta peab tegema ja kuidas.
+        </p>
+        <p>
+            <ul>
+                <li>
+                    <h3>
+                        <i>BDD (Behavior-Driven Development)</i>
+                    </h3>
+                    <p>
+                        Keskendub kasutajakogemusele ning sellest lähtuvalt on selle olulisemaks jooneks
+                        tihe ärialane suhtlus projekti asjaosalistega (ingl. k. <i>stakeholders</i>). Samuti 
+                        teeb selle praktika suur rõhk tiimialasele koostööle ja suhtlusele üheks populaarseks
+                        praktikas mitmetes agiilsetes metoodikates.
+                    </p>
+                </li>
+                <li>
+                    <h3>
+                        <i>ATDD</i> (kordus)
+                    </h3>
+                    <p>
+                        Kandub siia üle oma seetõttu, et keskendub süsteemide testimisele tervikuna, mis hõlmab ka selle
+                        käitumist.
+                    </p>
+                </li>
+                <li>
+                    <h3>
+                        <i>Specification by Example</i>
+                    </h3>
+                    <p>
+                        Meetod, mille põhieesmärk on läbi põhjaliku koostöö ja kommunikatsiooni projekti erinevate osapoolte
+                        vahel luua väga täpsed ja selged kirjeldused loodava tarkvara ootustest ja eesmärkidest selle algusfaasis
+                        ning seejärel kogu arendusprotsessi jooksul juhinduda sellest spetsifikatsioonist. Seda praktikate
+                        kogumit rakendatakse näiteks ekstreemprogrammeerimises, <i>Scrumis</i> ja <i>Kanbanis</i>.
+                    </p>
+                </li>
+            </ul>
+            <p>
+                <b>NB!</b> Kuigi teoreetiliselt on neil praktikatel väikseid erinevusi, kiputakse reaalses elus tihti
+                kasutama <i>BDD</i>-d, <i>SBE</i>-d ja <i>ATDD</i>-d sünonüümselt.
+            </p>
+        </p>
+    </div>
+
+    <div class="chapter-section">
+        <h2>
+            Domeeni- ja disainikesksed praktikad
+        </h2>
+        <p>
+
+        </p>
+        <ul>
+            <li>
+                <h3>
+                    <i>Domain-Driven Design</i>
+                </h3>
+                <p>
+                    Tegemist on tarkvaradisaini lähenemisviisiga, kus lähtutakse ideest, et
+                    hea tarkvara loomiseks pead sa täpselt aru saama, mis päriselu valdkonna probleemi see tarkvara lahendab.
+                    See tähendab, et eduka tarkvaraprojekti jaoks tuleb kasuks kommunikeerida vastava valdkonna ekspertidega,
+                    näiteks pangarakenduse loomisel aitaks pangandusevaldkonna ekspertidega suhtlemine.
+                </p>
+            </li>
+            <li>
+                <h3>
+                    <i>Design-Driven Development</i>
+                </h3>
+                <p>
+                    Prioritiseerib kasutajakogemust, keskendudes toote vastavusele kliendi vajadustele ja ootustele. See praktika
+                    hõlmab lisaks testipõhise arenduse rakendamisele ka rohket prototüüpimist.
+                </p>
+            </li>
+            <li>
+                <h3>
+                    <i>Secure by Design</i>
+                </h3>
+                <p>
+                    Tarkvaraarenduse lähenemisviis, mis keskendub arenduse igal etapil turvariskide vähendamisele ja
+                    ennetamisele. Ometi ei hõlma see vaid arendust, vaid nõuab holistlikku lähenemist organisatoorsel
+                    tasemel küberturvalisusele. Eesmärk on tagada tarbija andmete turvalisus toote disainimisfaasist selle
+                    hooldamisperioodini välja.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="chapter-section">
+        <h2>
+            Andmete- ja jõudlusekesksed praktikad
+        </h2>
+        <ul>
+            <li>
+                <h3>
+                    <i>Data Driven Development</i>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    <i>Data Oriented Design</i>
+                </h3>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div>
+        <h3>
+            Viited kasutatud infole:
+        </h3>
+        <p>
+            <a href="https://medium.com/@binoy_93931/from-agile-to-adaptive-intent-driven-development-aidd-the-ai-first-paradigm-shift-e07e5c7df1ec">
+                From Agile to Adaptive Intent-Driven Development (AIDD): The AI-First Paradigm Shift | by Binoy Ayyagari | Medium
+            </a>
+        </p>
+        <p>
+            <a href="https://www.geeksforgeeks.org/software-engineering/behavioral-driven-development-bdd-in-software-engineering/">
+                What is Behavior-Driven Development (BDD)? - GeeksForGeeks
+            </a>
+        </p>
+        <p>
+            <a href="https://www.ibm.com/think/topics/test-driven-development">
+                What is Test-Driven Development (TDD)? | IBM
+            </a>
+        </p>
+        <p>
+            <a href="https://agilealliance.org/glossary/atdd/">
+                Acceptance Test Driven Development (ATDD) | Agile Alliance
+            </a>
+        </p>
+        <p>
+            <a href="https://chatgpt.com/c/696281d1-5f38-832e-b2eb-800d32dfadb1">
+                Arendust suunavad praktikad - ChatGPT
+            </a>
+        </p>
+        <p>
+            <a href="https://www.oreilly.com/library/view/specification-by-example/9781617290084/">
+                Specification by Example [Book] - O'Reilly
+            </a>
+        </p>
+        <p>
+            <a href="https://www.scitepress.org/papers/2013/45872/45872.pdf">
+                Continuous Test-Driven Development -
+                A Novel Agile Software Development Practice and Supporting Tool -
+                Lech Madeyski and Marcin Kawalerowicz
+            </a>
+        </p>
+        <p>
+            <a href="https://www.uxpin.com/studio/blog/design-driven-development/">
+                What is Design-Driven Development? | UXPin
+            </a>
+        </p>
+        <p>
+            <a href="https://dev.to/lovestaco/domain-driven-design-3i2j">
+                Domain Driven Design - DEV Community
+            </a>
+        </p>
+        <p>
+            <a href="https://www.cyber.gov.au/business-government/secure-design/secure-by-design">
+                Secure by Design | Cyber.gov.au
+            </a>
+        </p>
+    </div>
+    <hr>
+
+    <div>
+        <a href="../index.html">Tagasi</a>
+    </div>
+
+    <script src="../toc.js"></script>
+
+</body>
+</html>
