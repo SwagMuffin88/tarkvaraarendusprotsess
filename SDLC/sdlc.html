@@ -20,252 +20,257 @@
     </h1>
 
     <hr/>
+    <div class="chapter-section">
+        <p>
+            <b>Tarkvaraarenduse</b> elutsükkel on protsess, mille käigus luuakse või
+            täiustatakse juba olemasolevat tarkvaratoodet.
+        </p>
 
-    <p>
-        <b>Tarkvaraarenduse</b> elutsükkel on protsess, mille käigus luuakse või  
-        täiustatakse juba olemasolevat tarkvaratoodet.
-    </p>
+        <p>
+            <b>Tarkvaratoode</b> on miski, mis luuakse tarkvaraarenduse elutsükli käigus
+            ning mida klient või lõppkasutaja saab kasutada. Tarkvaratoode võib olla kas
+            paigaldatav programm, serveritarkvara, driver või ükskõik, mis muu rakendus, mis
+            täidab lõppkasutaja jaoks mingit eesmärki.
+        </p></div>
 
-    <p>
-        <b>Tarkvaratoode</b> on miski, mis luuakse tarkvaraarenduse elutsükli käigus 
-        ning mida klient või lõppkasutaja saab kasutada. Tarkvaratoode võib olla kas 
-        paigaldatav programm, serveritarkvara, driver või ükskõik, mis muu rakendus, mis 
-        täidab lõppkasutaja jaoks mingit eesmärki.
-    </p>
-
-    <section id="toc">
+    <section id="toc" style="margin-top: 40px">
         <h2>Sisukord</h2>
         <ul id="toc-list"></ul>
     </section>
 
-    <h2>
-        Mis on tarkvaraarenduse elutsükli eesmärk?
-    </h2>
+    <div class="chapter-section">
+        <h2>
+            Mis on tarkvaraarenduse elutsükli eesmärk?
+        </h2>
 
-    <p>
-        Elutsükli eesmärk on tagada, et valmistatakse kvaliteetne toode, mis vastab 
-        kliendi nõuetele ja kasutaja vajatustele ning ootustele, mis võivad olla nii 
-        funktsionaalsed, kui mittefunktsionaalsed.
-    </p>
-    <p>
-        Eesmärgid tootele:
-        <ul style="list-style-type: square; display: grid; gap: 10px">
-            <li>
-                Toote õigeaegne valmimine
-            </li>
-            <li>
-                Tootmisprotsessi eelarve piiridesse jäämine
-            </li>
-            <li>
-                Töökindluse tagamine kasutamisel
-            </li>
-            <li>
-                Integreerumine kasutaja IT-taristusse
-            </li>
-            <li>
-                Madalad hoolduskulud
-            </li>
-        </ul>
-    </p>
+        <p>
+            Elutsükli eesmärk on tagada, et valmistatakse kvaliteetne toode, mis vastab
+            kliendi nõuetele ja kasutaja vajatustele ning ootustele, mis võivad olla nii
+            funktsionaalsed, kui mittefunktsionaalsed.
+        </p>
+        <p>
+            Eesmärgid tootele:
+            <ul>
+                <li>
+                    Toote õigeaegne valmimine
+                </li>
+                <li>
+                    Tootmisprotsessi eelarve piiridesse jäämine
+                </li>
+                <li>
+                    Töökindluse tagamine kasutamisel
+                </li>
+                <li>
+                    Integreerumine kasutaja IT-taristusse
+                </li>
+                <li>
+                    Madalad hoolduskulud
+                </li>
+            </ul>
+        </p>
+    </div>
 
-    <h2>
-        Milline näeb välja tüüpiline tarkvaraarenduse elutsükkel?
-    </h2>
+    <div class="chapter-section">
+        <h2>
+            Milline näeb välja tüüpiline tarkvaraarenduse elutsükkel?
+        </h2>
 
-    <p>
-        Tarkvaraarenduse elutsükkel on jaotatud etappideks. ning olenevalt mudelist võivad need erineda, 
-        aga üldiselt on igas mudelis olemas neli üldist etappi:
-        <ol>
-            <li>
-                <h3>Analüüs</h3>
-                <p>
-                    Tarkvaraprojektile vajalike nõuete väljaselgitamine - mis on lõppkasutaja vajadused ja ootused, millised
-                    on funktsionaalsed ja mittefunktsionaalsed nõuded.
-                </p>
-                <p>
-                    Näide: kalorikalkulaatori nõuded:
-                </p>
-                <table>
-                    <tr>
-                        <th>
-                            Funktsionaalsed nõuded
-                        </th>
-                        <th>
-                            Mittefunktsionaalsed nõuded
-                        </th>
-                    </tr>
+        <p>
+            Tarkvaraarenduse elutsükkel on jaotatud etappideks. ning olenevalt mudelist võivad need erineda,
+            aga üldiselt on igas mudelis olemas neli üldist etappi:
+            <ol>
+                <li>
+                    <h3>Analüüs</h3>
+                    <p>
+                        Tarkvaraprojektile vajalike nõuete väljaselgitamine - mis on lõppkasutaja vajadused ja ootused, millised
+                        on funktsionaalsed ja mittefunktsionaalsed nõuded.
+                    </p>
+                    <p>
+                        Näide: kalorikalkulaatori nõuded:
+                    </p>
+                    <table>
+                        <tr>
+                            <th>
+                                Funktsionaalsed nõuded
+                            </th>
+                            <th>
+                                Mittefunktsionaalsed nõuded
+                            </th>
+                        </tr>
 
-                    <tr>
-                        <td>
-                            Igapäevase kaloritarbimise arvutamine
-                        </td>
-                        <td>
-                            Kasutajasõbralik ja mugav navigatsioon
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Andmebaasis olemasolevate toodete
-                        </td>
-                        <td>
-                            Tugi vaegnägijatele
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Triipkoodide skännimise võimalus
-                        </td>
-                        <td>
-                            Süsteemiressursside minimaalne kasutus
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Märguannete saatmine hoiatuste ja saavutuste kohta
-                        </td>
-                        <td>
-                            Kasutaja info mitte salvestamine serverisse
-                        </td>
-                    </tr>
-                </table>
-                <br/>
-            </li>
+                        <tr>
+                            <td>
+                                Igapäevase kaloritarbimise arvutamine
+                            </td>
+                            <td>
+                                Kasutajasõbralik ja mugav navigatsioon
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Andmebaasis olemasolevate toodete
+                            </td>
+                            <td>
+                                Tugi vaegnägijatele
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Triipkoodide skännimise võimalus
+                            </td>
+                            <td>
+                                Süsteemiressursside minimaalne kasutus
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Märguannete saatmine hoiatuste ja saavutuste kohta
+                            </td>
+                            <td>
+                                Kasutaja info mitte salvestamine serverisse
+                            </td>
+                        </tr>
+                    </table>
+                    <br/>
+                </li>
 
-            <li>
-                <h3>Projekteerimine</h3>
-                <p>
-                    Määratakse süsteemi sisemine arhitektuur, osised, liidesed ja muud omadused.
-                    Selle töö tulemusena tekib arendatavast projektist kavand. Etapis analüüsitakse 
-                    eelnevas etapis paika pandud nõuded ja kirjeldatakse nende abil struktuur. <br/>
-                    Kavandietappi võib jaotada ka kaheks - üleüldine struktuur selgitatakse välja detailidest eraldi. 
-                </p>
-                <p>
-                    Need jagunevad omakorda kaheks etapiks:
-                    <ul>
-                        <li>
-                            <b>Arhitektuuri kavandamine: </b> kõrgtaseme komponentide määramine, seosed teiste suuremate ja üldisemate 
-                            tarkvara osade vahel.
-                        </li>
-                        <li>
-                            <b>Projekti detailide kavandamine: </b> komponentide ülesehituse täpsustamine (protseduurid, objektid, algoritmid jms)
-                        
-                        </li>
-                    </ul>
-                </p>
-            </li>
+                <li>
+                    <h3>Projekteerimine</h3>
+                    <p>
+                        Määratakse süsteemi sisemine arhitektuur, osised, liidesed ja muud omadused.
+                        Selle töö tulemusena tekib arendatavast projektist kavand. Etapis analüüsitakse
+                        eelnevas etapis paika pandud nõuded ja kirjeldatakse nende abil struktuur. <br/>
+                        Kavandietappi võib jaotada ka kaheks - üleüldine struktuur selgitatakse välja detailidest eraldi.
+                    </p>
+                    <p>
+                        Need jagunevad omakorda kaheks etapiks:
+                        <ul>
+                            <li>
+                                <b>Arhitektuuri kavandamine: </b> kõrgtaseme komponentide määramine, seosed teiste suuremate ja üldisemate
+                                tarkvara osade vahel.
+                            </li>
+                            <li>
+                                <b>Projekti detailide kavandamine: </b> komponentide ülesehituse täpsustamine (protseduurid, objektid, algoritmid jms)
 
-            <li>
-                <h3>
-                    Teostus
-                </h3>
-                <p>
-                    Eelnevas etapid loodud kavandile tuginedes valmistatakse reaalne tarkvaratoode. 
-                    Näiteks saab rakendada erinevate pisidetailide jaoks tervet arendajate meeskonda, kus iga 
-                    liige või alamtiim lahendab ühe kindla detailiga seotud ülesandeid.
-                </p>
-            </li>
+                            </li>
+                        </ul>
+                    </p>
+                </li>
 
-            <li>
-                <h3>
-                    Hooldus
-                </h3> 
-                <p>
-                    Toote valmides antakse see üle kliendile ning vajadusel teostatakse
-                    toote kasutuse ajal ka sellele hooldust. Saab teostada edasisi parandusi, 
-                    optimeerimist ja toote töökvaliteedi kontrolli.
-                </p>
-                <p>
-                    Samuti saab klient esitada uusi nõudeid, mida ta tootele juurde soovib. See aitab tootel 
-                    püsida konkurentsivõimelisena.
-                </p>
-                <p>
-                    Väga oluline on hooldusfaasis see, et hooldust teostav arendaja/meeskond saaks 
-                    hõlpsasti aru eelnevate arendajate kirjutatud koodist, sest see aitab projekti haldamisel
-                    kokku hoida kulusid, teostada hooldust kiiremini ning lihtsamini.
-                </p>
-            </li>
-        </ol>
-    </p>
+                <li>
+                    <h3>
+                        Teostus
+                    </h3>
+                    <p>
+                        Eelnevas etapid loodud kavandile tuginedes valmistatakse reaalne tarkvaratoode.
+                        Näiteks saab rakendada erinevate pisidetailide jaoks tervet arendajate meeskonda, kus iga
+                        liige või alamtiim lahendab ühe kindla detailiga seotud ülesandeid.
+                    </p>
+                </li>
 
-    <h2>
-        Erinevad tarkvaraarenduse elutsüklite mudelid üksikasjalikult
-    </h2>
-    <p>
-        <ul style="list-style: square; display: grid; gap: 10px">
-            <li>
-                <a href="./waterfall.html"
-                   class="preview-link"
-                   data-preview="./waterfall.html">
-                    Kosemudel
-                </a>
-            </li>
+                <li>
+                    <h3>
+                        Hooldus
+                    </h3>
+                    <p>
+                        Toote valmides antakse see üle kliendile ning vajadusel teostatakse
+                        toote kasutuse ajal ka sellele hooldust. Saab teostada edasisi parandusi,
+                        optimeerimist ja toote töökvaliteedi kontrolli.
+                    </p>
+                    <p>
+                        Samuti saab klient esitada uusi nõudeid, mida ta tootele juurde soovib. See aitab tootel
+                        püsida konkurentsivõimelisena.
+                    </p>
+                    <p>
+                        Väga oluline on hooldusfaasis see, et hooldust teostav arendaja/meeskond saaks
+                        hõlpsasti aru eelnevate arendajate kirjutatud koodist, sest see aitab projekti haldamisel
+                        kokku hoida kulusid, teostada hooldust kiiremini ning lihtsamini.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </div>
 
-            <li>
-                <a href="./incremental.html"
-                   class="preview-link"
-                   data-preview="./incremental.html">
-                    Inkrementaalne mudel
-                </a>
-            </li>
+    <div class="chapter-section">
+        <h2>
+            Erinevad tarkvaraarenduse elutsüklite mudelid üksikasjalikult
+        </h2>
+            <p>
+            <ul style="list-style: square; display: grid; gap: 10px">
+                <li>
+                    <a href="./waterfall.html"
+                       class="preview-link"
+                       data-preview="./waterfall.html">
+                        Kosemudel
+                    </a>
+                </li>
 
-            <li>
-                <a href="./spiral.html"
-                   class="preview-link"
-                   data-preview="./spiral.html">
-                    Spiraalmudel
-                </a>
-            </li>
+                <li>
+                    <a href="./incremental.html"
+                       class="preview-link"
+                       data-preview="./incremental.html">
+                        Inkrementaalne mudel
+                    </a>
+                </li>
 
-            <li>
-                <a href="./prototyping.html"
-                   class="preview-link"
-                   data-preview="./prototyping.html">
-                    Prototüüpimine
-                </a>
-            </li>
+                <li>
+                    <a href="./spiral.html"
+                       class="preview-link"
+                       data-preview="./spiral.html">
+                        Spiraalmudel
+                    </a>
+                </li>
 
-            <li>
-                <a href="./agile.html"
-                   class="preview-link"
-                   data-preview="./agile.html">
-                    Agiilne metodoloogia
-                </a>
-            </li>
+                <li>
+                    <a href="./prototyping.html"
+                       class="preview-link"
+                       data-preview="./prototyping.html">
+                        Prototüüpimine
+                    </a>
+                </li>
 
-            <li>
-                <a href="./bigbang.html"
-                   class="preview-link"
-                   data-preview="./bigbang.html">
-                    <i>Big Bang</i> mudel
-                </a>
-            </li>
+                <li>
+                    <a href="./agile.html"
+                       class="preview-link"
+                       data-preview="./agile.html">
+                        Agiilne metodoloogia
+                    </a>
+                </li>
 
-            <li>
-                <a href="./devops.html"
-                   class="preview-link"
-                   data-preview="./devops.html">
-                    <i>DevOps</i>
-                </a>
-            </li>
+                <li>
+                    <a href="./bigbang.html"
+                       class="preview-link"
+                       data-preview="./bigbang.html">
+                        <i>Big Bang</i> mudel
+                    </a>
+                </li>
 
-            <li>
-                <a href="./xtreme.html"
-                   class="preview-link"
-                   data-preview="./xtreme.html">
-                    Ekstreemprogrammeerimine
-                </a>
-            </li>
+                <li>
+                    <a href="./devops.html"
+                       class="preview-link"
+                       data-preview="./devops.html">
+                        <i>DevOps</i>
+                    </a>
+                </li>
 
-            <li>
-                <a href="./vshape.html"
-                   class="preview-link"
-                   data-preview="./vshape.html">
-                    V-kujuline mudel
-                </a>
-            </li>
+                <li>
+                    <a href="./xtreme.html"
+                       class="preview-link"
+                       data-preview="./xtreme.html">
+                        Ekstreemprogrammeerimine
+                    </a>
+                </li>
 
-        </ul>
-    </p>
+                <li>
+                    <a href="./vshape.html"
+                       class="preview-link"
+                       data-preview="./vshape.html">
+                        V-kujuline mudel
+                    </a>
+                </li>
+            </ul>
+        </p>
+    </div>
 
     <hr/>
     <a href="../index.html">Tagasi</a>
