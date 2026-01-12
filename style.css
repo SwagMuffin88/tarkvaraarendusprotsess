@@ -1,11 +1,10 @@
 body {
     /*font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
     font-family: "Adwaita Mono", monospace;
-    text-align: justify-all;
+    /*text-align: justify-all;*/
     padding: 40px;
     border: lightpink 3px dotted;
     border-radius: 15px;
-
 }
 
 h1 {
