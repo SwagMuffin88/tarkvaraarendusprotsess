@@ -1,3 +1,3 @@
 https://swagmuffin88.github.io/tarkvaraarendusprotsess/
 
-Migrated to: https://katrilotamois24.thkit.ee
+Migrated to Zone server: https://katrilotamois24.thkit.ee
